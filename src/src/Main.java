@@ -91,7 +91,9 @@ public class Main {
         ListaPacientes.adicionarPaciente(paciente);
     }
 
+    //Ex6: listar pacientes
     private static void telaListarPacientes() {
+        ListaPacientes.listarPacientes();
     }
 
     private static void telaAlterarPaciente(Scanner scanner) {
