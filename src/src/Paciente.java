@@ -10,7 +10,7 @@ public class Paciente {
     public int idade;
     public double peso;
     public double altura;
-    public int pressaoArterial;
+    public double pressaoArterial;
     public int frequenciaCardiaca;
     public String dietaAlimentar;
     public List<String> atividadesFisicas = new ArrayList<>();

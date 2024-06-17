@@ -62,8 +62,33 @@ public class Main {
         }
         scanner.close();
     }
-
+    //Ex5: cadastrar um novo paciente
     private static void telaCadastrarPaciente(Scanner scanner) {
+        Paciente paciente = new Paciente();
+        System.out.println("Insira os dados do paciente:");
+
+        System.out.print("Nome: ");
+        paciente.nome = scanner.next();
+
+        System.out.print("Idade: ");
+        paciente.idade = Integer.parseInt(scanner.next());
+
+        System.out.print("Peso: ");
+        paciente.peso = Double.parseDouble(scanner.next());
+
+        System.out.print("Altura: ");
+        paciente.altura = Double.parseDouble(scanner.next());
+
+        System.out.print("Pressão Arterial: ");
+        paciente.pressaoArterial = Double.parseDouble(scanner.next());
+
+        System.out.print("Frequência cardíaca: ");
+        paciente.frequenciaCardiaca = Integer.parseInt(scanner.next());
+
+        System.out.print("Tipo de dieta alimentar: ");
+        paciente.dietaAlimentar = scanner.next();
+
+        ListaPacientes.adicionarPaciente(paciente);
     }
 
     private static void telaListarPacientes() {
