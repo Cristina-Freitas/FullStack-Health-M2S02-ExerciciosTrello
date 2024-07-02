@@ -143,7 +143,12 @@ public class Main {
         
     }
 
+    //Ex10: Remover paciente por id
     private static void telaRemoverPaciente(Scanner scanner) {
+        System.out.println("Insira o id do paciente que deseja remover?");
+
+        ListaPacientes.removerPaciente(Integer.parseInt(scanner.next()));
+        System.out.println("Paciente removido com sucesso!");
         
     }
 
