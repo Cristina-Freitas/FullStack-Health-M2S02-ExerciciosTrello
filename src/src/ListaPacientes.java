@@ -17,10 +17,13 @@ public class ListaPacientes {
     }
 
     public static void adicionarPaciente(Paciente paciente) {
+
         pacientes.add(paciente);
     }
 
     public static void removerPaciente(int id){
+
+
         pacientes.remove(id);
     }
 }

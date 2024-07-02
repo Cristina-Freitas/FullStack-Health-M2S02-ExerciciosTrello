@@ -96,8 +96,30 @@ public class Main {
         ListaPacientes.listarPacientes();
     }
 
+    //Ex7: Alterar informações de pacientes
     private static void telaAlterarPaciente(Scanner scanner) {
-        
+        System.out.println("Insira o id do paciente que deseja alterar?");
+
+        Paciente paciente = ListaPacientes.buscarPacienteId(Integer.parseInt(scanner.next()));
+
+        System.out.println("Atualize as informações:");
+        System.out.print("Peso: ");
+        paciente.peso = Double.parseDouble(scanner.next());
+
+        System.out.print("Altura: ");
+        paciente.altura = Double.parseDouble(scanner.next());
+
+        System.out.print("Pressão arterial: ");
+        paciente.pressaoArterial = Double.parseDouble(scanner.next());
+
+        System.out.print("Frequência cardíaca: ");
+        paciente.frequenciaCardiaca = Integer.parseInt(scanner.next());
+
+        System.out.print("Dieta alimentar: ");
+        paciente.dietaAlimentar = scanner.next();
+
+        System.out.println("Informações atualizadas.");
+        paciente.monitoramento();
     }
 
     private static void telaExibirPaciente(Scanner scanner) {
@@ -111,6 +133,7 @@ public class Main {
     private static void telaRemoverPaciente(Scanner scanner) {
         
     }
+
 
 
 }

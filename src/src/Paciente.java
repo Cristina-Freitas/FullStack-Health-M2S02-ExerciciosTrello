@@ -25,8 +25,8 @@ public class Paciente {
         System.out.println("Informações do paciente:\n" +
                 "Nome: " + this.nome + "\n" +
                 "Idade: " + this.idade + "\n" +
-                "Peso: " + this.peso + "\n" +
-                "Altura: " + this.altura + "\n" +
+                "Peso: " + this.peso + "kg" + "\n" +
+                "Altura: " + this.altura + "cm" + "\n" +
                 "Pressão arterial: " + this.pressaoArterial + " mmHg." + "\n" +
                 "Frequência cardíaca: " + this.frequenciaCardiaca + " bpm." + "\n" +
                 "Dieta alimentar: " + this.dietaAlimentar + "\n" +
