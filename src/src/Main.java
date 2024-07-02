@@ -130,7 +130,16 @@ public class Main {
         paciente.monitoramento();
     }
 
+    //Ex9: Registrar atividade física para um paciente
     private static void telaRegistrarAtividade(Scanner scanner) {
+        System.out.println("Insira o id do paciente para registrar a atividade física?");
+
+        Paciente paciente = ListaPacientes.buscarPacienteId(Integer.parseInt(scanner.next()));
+
+        System.out.print("Atividade física: ");
+        paciente.registrarAtividadeFisica(scanner.next());
+
+        System.out.println("Atividade física registrada.");
         
     }
 
