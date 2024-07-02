@@ -1,3 +1,6 @@
+import entidades.Paciente;
+import repositorio.ListaPacientes;
+
 import java.util.Scanner;
 
 public class Main {
@@ -148,7 +151,7 @@ public class Main {
         System.out.println("Insira o id do paciente que deseja remover?");
 
         ListaPacientes.removerPaciente(Integer.parseInt(scanner.next()));
-        System.out.println("Paciente removido com sucesso!");
+        System.out.println("entidades.Paciente removido com sucesso!");
         
     }
 

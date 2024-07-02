@@ -1,3 +1,7 @@
+package repositorio;
+
+import entidades.Paciente;
+
 import java.util.ArrayList;
 
 public class ListaPacientes {
