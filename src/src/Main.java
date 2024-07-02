@@ -122,8 +122,12 @@ public class Main {
         paciente.monitoramento();
     }
 
+    //Ex8: Exibir informações do paciente
     private static void telaExibirPaciente(Scanner scanner) {
-        
+        System.out.println("Insira o id do paciente para exibir as informações?");
+
+        Paciente paciente = ListaPacientes.buscarPacienteId(Integer.parseInt(scanner.next()));
+        paciente.monitoramento();
     }
 
     private static void telaRegistrarAtividade(Scanner scanner) {
